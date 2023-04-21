@@ -1,0 +1,20 @@
+:root {
+  --side: 200px;
+}
+
+.carouselDiv {
+  animation: carousel 50s linear infinite;
+}
+
+@keyframes carousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--side) * 11));
+  }
+}
+
+.svgImageDiv {
+  width: var(--side);
+}
