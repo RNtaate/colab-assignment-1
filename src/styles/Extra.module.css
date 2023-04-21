@@ -1,0 +1,19 @@
+.extraMain {
+  min-height: 100vh;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.extraContainer {
+  max-width: 800px;
+  gap: 50px;
+  padding: 0 20px;
+}
+
+.extraContainer > h3 {
+  max-width: 600px;
+  color: #ccc;
+  line-height: 1.3em;
+  font-size: 1.5em;
+  font-weight: 200;
+}
