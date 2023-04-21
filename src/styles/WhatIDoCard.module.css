@@ -1,0 +1,11 @@
+.cardContainer {
+  max-width: 300px;
+  /* border: 1px solid blue; */
+  padding: 10px 20px;
+}
+
+.cardContainer > img {
+  margin-right: 20px;
+  width: 50%;
+  aspect-ratio: 1;
+}
