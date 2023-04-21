@@ -5,11 +5,13 @@ import backendImage from '../../../assets/backend1.svg'
 import mobileImage from '../../../assets/mobile-dev.svg'
 import WhatIDoCard from '../../../components/WhatIDoCard'
 import styles from '../../../styles/WhatIDo.module.css'
+import SkillsCarousel from '../../../components/SkillsCarousel'
+
 export default function WhatIDo() {
   const svgDimensions = 100
 
   return (
-    <section className={`bg-primary`}>
+    <section className={`bg-primary d-flex flex-col`}>
       <h2 className={`${styles.whatIDoHeading} text-center`}>WHAT I DO</h2>
       <div
         className={`${styles.cardsContainerDiv} d-flex justify-content-center`}
@@ -33,6 +35,8 @@ export default function WhatIDo() {
           corner={'borderBottomLeftRadius'}
         />
       </div>
+
+      <SkillsCarousel />
     </section>
   )
 }
