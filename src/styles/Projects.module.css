@@ -3,4 +3,18 @@
   grid-template-columns: 1fr;
   place-items: center;
   gap: 30px;
+  max-width: var(--maximum-container-width);
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 769px) {
+  .projectsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .projectsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
