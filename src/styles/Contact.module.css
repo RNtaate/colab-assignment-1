@@ -6,6 +6,10 @@
   bottom: 0;
 }
 
+.contactWrapper {
+  width: 100%;
+}
+
 .contactContainer {
   width: 100%;
   gap: 40px;
@@ -18,4 +22,40 @@
 
 .contactSocialsDiv > a > span:hover {
   color: rgb(211, 65, 82, 0.5);
+}
+
+.contactImageWrapper {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  display: none;
+}
+
+.contactImageSvg {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  transform: rotate(-45deg);
+  opacity: 0.5;
+}
+
+.contactImageContainer {
+  width: 20em;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 20px solid rgb(211, 65, 82, 0.8);
+}
+
+.contactImageWrapper > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contactImageWrapper {
+    display: flex;
+  }
 }

@@ -16,6 +16,8 @@
   --text-color-secondary: #999;
   --secondary-black: rgb(26, 26, 26);
   --primary-black: rgb(0, 0, 0);
+  --primary-font: 'Raleway', sans-serif;
+  --maximum-container-width: 1150px;
 }
 
 .bg-primary {
@@ -67,7 +69,8 @@ p {
   line-height: 25px;
 }
 
-a {
+a,
+button {
   outline: none;
   border: none;
   color: white;
@@ -79,8 +82,12 @@ a:hover {
   color: var(--main-pink);
 }
 
+button {
+  background-color: transparent;
+}
+
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--primary-font);
   color: var(--text-color);
 }
 
