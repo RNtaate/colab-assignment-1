@@ -10,7 +10,7 @@ export default function About() {
       <div
         className={`${styles.aboutContainer} d-flex flex-col align-items-center`}
       >
-        <h1 className={'text-center'}>ABOUT</h1>
+        <h1 className={`${styles.aboutHeading} text-center`}>ABOUT</h1>
         <div
           className={`${styles.aboutDetailsWrapper} d-flex justify-content-center`}
         >

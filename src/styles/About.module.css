@@ -13,7 +13,7 @@
   background-attachment: fixed; */
 }
 
-.aboutContainer > h1 {
+.aboutHeading {
   padding: 20px 30px;
   border: 1px solid var(--main-pink);
   color: var(--main-pink);
