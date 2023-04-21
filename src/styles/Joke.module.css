@@ -1,0 +1,35 @@
+.jokeContainer {
+  position: relative;
+  width: 100%;
+}
+
+.upperSpan,
+.lowerSpan {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  aspect-ratio: 1;
+  background-color: var(--main-pink);
+  transition: all 1s ease-in-out;
+}
+
+.upperSpan {
+  top: -20px;
+  left: -20px;
+}
+
+.lowerSpan {
+  bottom: -20px;
+  right: -20px;
+}
+
+.jokeDetails {
+  padding: 30px 20px;
+  width: 100%;
+  min-height: 100px;
+  z-index: 2;
+}
+
+.punchLine {
+  margin-bottom: 30px;
+}
