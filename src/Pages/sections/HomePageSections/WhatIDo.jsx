@@ -12,7 +12,7 @@ export default function WhatIDo() {
   const svgDimensions = 100
 
   return (
-    <section className={`bg-primary d-flex flex-col`}>
+    <section className={`bg-primary d-flex flex-col align-items-center`}>
       <h2 className={`${styles.whatIDoHeading} text-center`}>WHAT I DO</h2>
 
       <div

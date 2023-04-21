@@ -7,7 +7,6 @@
 .whatIDoContainer {
   flex-direction: column;
   max-width: var(--maximum-container-width);
-  margin: 0 auto;
 }
 
 .imageDiv {
@@ -34,9 +33,3 @@
     order: 2;
   }
 }
-
-/* @media screen and (min-width: 993px) {
-  .whatIDoContainer {
-    padding: 0 3em;
-  }
-} */
