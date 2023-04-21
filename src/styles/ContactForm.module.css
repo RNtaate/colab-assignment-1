@@ -25,14 +25,15 @@
   font-family: var(--primary-font);
 }
 
-.contactForm > button {
+.contactFormSubmitButton {
   background-color: var(--main-pink);
   padding: 10px 0;
   border: 1px solid var(--main-pink);
   transition: 0.5s ease-in-out;
   font-weight: bold;
+  width: 100%;
 }
 
-.contactForm > button:hover {
+.contactFormSubmitButton:hover {
   background-color: transparent;
 }

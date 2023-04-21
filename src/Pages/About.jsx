@@ -2,6 +2,7 @@ import React from 'react'
 
 import styles from '../styles/About.module.css'
 import profileImage from '../assets/profile_photo.jpg'
+import formStyles from '../styles/ContactForm.module.css'
 
 export default function About() {
   return (
@@ -11,10 +12,39 @@ export default function About() {
       >
         <h1 className={'text-center'}>ABOUT</h1>
         <div
-          className={`${styles.aboutDetailsWrapper} d-flex flex-col align-items-center`}
+          className={`${styles.aboutDetailsWrapper} d-flex justify-content-center`}
         >
-          <div className={`${styles.imageContainer}`}>
-            <img src={profileImage} altg="profile image" />
+          <div className={`${styles.avatarSocialsWrapper} d-flex flex-col`}>
+            <div className={`${styles.imageContainer}`}>
+              <img src={profileImage} altg="profile image" />
+            </div>
+
+            <div
+              className={`${styles.socialsDiv} d-flex align-items-center justify-content-center`}
+            >
+              <a href="https://github.com/RNtaate" target="_blank">
+                <span>
+                  <i class="fa-brands fa-github"></i>
+                </span>
+              </a>
+
+              <a href="https://linkedin.com/in/roy-ntaate" target="_blank">
+                <span>
+                  <i class="fa-brands fa-linkedin"></i>
+                </span>
+              </a>
+              <a href="https://twitter.com/RNtaate" target="_blank">
+                <span>
+                  <i class="fa-brands fa-twitter"></i>
+                </span>
+              </a>
+
+              <a href="mailto:royhyde14@gmail.com" target="_blank">
+                <span>
+                  <i class="fa-solid fa-envelope"></i>
+                </span>
+              </a>
+            </div>
           </div>
 
           <div className={styles.detailsSection}>
@@ -44,6 +74,9 @@ export default function About() {
               I currently work as a Freelance Web Developer and I am open to any
               development opportunities."
             </p>
+            <button className={formStyles.contactFormSubmitButton}>
+              GET MY RESUME
+            </button>
           </div>
         </div>
       </div>

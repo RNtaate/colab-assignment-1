@@ -6,6 +6,11 @@
   min-height: 100vh;
   padding: 100px 0;
   overflow: hidden;
+  /* background-image: url('../assets/night_sky.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
 .aboutContainer > h1 {
@@ -18,10 +23,16 @@
   margin-top: 100px;
   width: 100%;
   gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatarSocialsWrapper {
+  width: 20em;
 }
 
 .imageContainer {
-  width: 20em;
+  width: 100%;
   aspect-ratio: 1;
   overflow: hidden;
   border: 10px solid var(--main-pink);
@@ -37,6 +48,21 @@
   object-position: center;
 }
 
+.socialsDiv {
+  width: 100%;
+  gap: 20px;
+}
+
+.socialsDiv > a > span {
+  color: #aaa;
+  transition: 0.3s ease-in-out;
+  font-size: 25px;
+}
+
+.socialsDiv > a > span:hover {
+  color: rgb(211, 65, 82, 0.5);
+}
+
 .detailsSection {
   max-width: 500px;
   padding: 20px;
@@ -47,7 +73,14 @@
   font-size: 1.5em;
   font-weight: 200;
   line-height: 1.3em;
-  text-shadow: 0 2px 1px rgb(211, 65, 82, var(--opacity)),
+  /* text-shadow: 0 2px 1px rgb(211, 65, 82, var(--opacity)),
     -1px 3px 1px rgb(211, 65, 82, var(--opacity)),
-    -2px 5px 1px rgb(211, 65, 82, var(--opacity));
+    -2px 5px 1px rgb(211, 65, 82, var(--opacity)); */
+}
+
+@media screen and (min-width: 800px) {
+  .aboutDetailsWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }

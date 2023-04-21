@@ -9,7 +9,9 @@ export default function ContactForm() {
         <input type="text" placeholder="Name" autoComplete="off" />
         <input type="email" placeholder="Email" autoComplete="off" />
         <textarea placeholder="Message" />
-        <button type="submit">SEND</button>
+        <button type="submit" className={styles.contactFormSubmitButton}>
+          SEND
+        </button>
       </form>
     </div>
   )
