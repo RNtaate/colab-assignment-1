@@ -1,0 +1,53 @@
+:root {
+  --opacity: 0.5;
+}
+
+.aboutPageMainDiv {
+  min-height: 100vh;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.aboutContainer > h1 {
+  padding: 20px 30px;
+  border: 1px solid var(--main-pink);
+  color: var(--main-pink);
+}
+
+.aboutDetailsWrapper {
+  margin-top: 100px;
+  width: 100%;
+  gap: 30px;
+}
+
+.imageContainer {
+  width: 20em;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border: 10px solid var(--main-pink);
+  border-radius: 10px;
+  transform: rotate(-10deg);
+  margin-bottom: 40px;
+}
+
+.imageContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.detailsSection {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.detailsSection > p {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 200;
+  line-height: 1.3em;
+  text-shadow: 0 2px 1px rgb(211, 65, 82, var(--opacity)),
+    -1px 3px 1px rgb(211, 65, 82, var(--opacity)),
+    -2px 5px 1px rgb(211, 65, 82, var(--opacity));
+}
