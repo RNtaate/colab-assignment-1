@@ -40,7 +40,7 @@ export default function Contact() {
       <div
         className={`${styles.contactContainer} d-flex flex-col align-items-center`}
       >
-        <h3>✉️ CONTACT ME</h3>
+        <h3>CONTACT ME</h3>
         <ContactForm />
         <div
           className={`${headerStyles.headerSocialsDiv} ${styles.contactSocialsDiv} d-flex align-items-center`}

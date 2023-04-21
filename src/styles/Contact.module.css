@@ -2,4 +2,20 @@
   min-height: 100vh;
   max-height: 100vh;
   overflow: hidden;
+  position: sticky;
+  bottom: 0;
+}
+
+.contactContainer {
+  width: 100%;
+  gap: 40px;
+}
+
+.contactSocialsDiv > a > span {
+  color: var(--secondary-black);
+  transition: 0.3s ease-in-out;
+}
+
+.contactSocialsDiv > a > span:hover {
+  color: rgb(211, 65, 82, 0.5);
 }
