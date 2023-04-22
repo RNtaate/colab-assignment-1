@@ -1,0 +1,39 @@
+.whatIDoSection {
+  padding: 100px 0;
+}
+
+.cardsContainerDiv {
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 50px 0 100px 0;
+}
+
+.whatIDoContainer {
+  flex-direction: column;
+  max-width: var(--maximum-container-width);
+}
+
+.imageDiv {
+  width: 100%;
+  max-width: 450px;
+  min-width: 320px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: rgba(211, 65, 82, 0.7);
+}
+
+.imageDiv > img {
+  width: 200%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media screen and (min-width: 769px) {
+  .whatIDoContainer {
+    flex-direction: row;
+  }
+
+  .imageDiv {
+    order: 2;
+  }
+}

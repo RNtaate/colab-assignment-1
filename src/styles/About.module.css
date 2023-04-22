@@ -1,0 +1,78 @@
+:root {
+  --opacity: 0.5;
+}
+
+.aboutPageMainDiv {
+  min-height: 100vh;
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.aboutHeading {
+  padding: 20px 30px;
+  border: 1px solid var(--main-pink);
+  color: var(--main-pink);
+}
+
+.aboutDetailsWrapper {
+  margin-top: 100px;
+  width: 100%;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatarSocialsWrapper {
+  width: 20em;
+}
+
+.imageContainer {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border: 10px solid var(--main-pink);
+  border-radius: 10px;
+  transform: rotate(-10deg);
+  margin-bottom: 40px;
+}
+
+.imageContainer > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.socialsDiv {
+  width: 100%;
+  gap: 20px;
+}
+
+.socialsDiv > a > span {
+  color: #aaa;
+  transition: 0.3s ease-in-out;
+  font-size: 25px;
+}
+
+.socialsDiv > a > span:hover {
+  color: rgb(211, 65, 82, 0.5);
+}
+
+.detailsSection {
+  max-width: 500px;
+  padding: 20px;
+}
+
+.detailsSection > p {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  font-weight: 200;
+  line-height: 1.3em;
+}
+
+@media screen and (min-width: 800px) {
+  .aboutDetailsWrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,39 @@
+.jokeContainer {
+  position: relative;
+  width: 100%;
+}
+
+.upperSpan,
+.lowerSpan {
+  position: absolute;
+  width: 35%;
+  height: 50%;
+  aspect-ratio: 1 / 1;
+  background-color: var(--main-pink);
+  transition: all 1s ease-in-out;
+}
+
+.upperSpan {
+  top: -10px;
+  left: -10px;
+}
+
+.lowerSpan {
+  bottom: -10px;
+  right: -10px;
+}
+
+.jokeDetails {
+  padding: 30px 20px;
+  width: 100%;
+  min-height: 100px;
+  z-index: 2;
+}
+
+.setUp {
+  margin-bottom: 30px;
+}
+
+.errorParagraph {
+  color: rgba(255, 0, 0, 1);
+}

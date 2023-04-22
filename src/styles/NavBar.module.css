@@ -1,0 +1,69 @@
+.navBar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.9);
+  top: 100%;
+  transform: translateY(-100%);
+  overflow: hidden;
+  z-index: 10;
+  justify-content: center;
+}
+
+.navLogo {
+  display: none;
+}
+
+.logoDiv {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+}
+
+.logoDiv > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.navBarList {
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.navBarList > li > a {
+  color: black;
+}
+
+.navBarList > li > a > span {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+@media screen and (min-width: 800px) and (min-height: 550px) {
+  .navBar {
+    padding: 20px 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    background-color: transparent;
+    justify-content: space-between;
+  }
+
+  .navLogo {
+    display: block;
+  }
+
+  .navBarList {
+    gap: 40px;
+  }
+
+  .navBarList > li > a {
+    color: white;
+    font-weight: 600;
+  }
+}

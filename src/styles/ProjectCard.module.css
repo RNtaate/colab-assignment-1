@@ -1,0 +1,64 @@
+.projectWrapper {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.cardDetails {
+  background-color: rgba(211, 65, 82, 0.9);
+  width: 90%;
+  height: 90%;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  transform: scale(1.1);
+  padding: 20px;
+  gap: 10px;
+  position: relative;
+}
+
+.projectWrapper:hover > .cardDetails {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.cardDetails > p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.projectTagsDiv {
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.projectTagsDiv > span {
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+.linksDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 10px 5px 10px;
+  gap: 10px;
+}
+
+.linksDiv > a > span {
+  font-size: 18px;
+}
+
+.viewSpan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  padding: 5px 0 0 10px;
+}
