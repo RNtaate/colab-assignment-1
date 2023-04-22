@@ -43,7 +43,7 @@
   border-bottom: 2px solid transparent;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 800px) and (min-height: 700px) {
   .navBar {
     padding: 20px 70px;
     position: absolute;
