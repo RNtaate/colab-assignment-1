@@ -1,8 +1,8 @@
-import runnerImage from '../assets/endless-runner.png'
-import norpgramImage from '../assets/norpgram-min.png'
-import norpmoviesImage from '../assets/norp_movies-min.png'
-import soundImage from '../assets/sound-min.png'
-import bookingsImage from '../assets/booking-appointments.jpg'
+import runnerImage from '../assets/endless-runner.png';
+import norpgramImage from '../assets/norpgram-min.png';
+import norpmoviesImage from '../assets/norp_movies-min.png';
+import soundImage from '../assets/sound-min.png';
+import bookingsImage from '../assets/booking-appointments.jpg';
 
 export const projectsData = [
   {
@@ -49,4 +49,4 @@ export const projectsData = [
     github: 'https://github.com/RNtaate/bookings-frontend',
     view: 'DESKTOP',
   },
-]
+];

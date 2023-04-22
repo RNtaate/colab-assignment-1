@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import styles from '../styles/WhatIDoCard.module.css'
+import styles from '../styles/WhatIDoCard.module.css';
 
 export default function WhatIDoCard({ imgSrc, title, corner }) {
-  const curve = '50px'
+  const curve = '50px';
   return (
     <div
       className={`${styles.cardContainer} bg-secondary d-flex align-items-center`}
@@ -12,5 +12,5 @@ export default function WhatIDoCard({ imgSrc, title, corner }) {
       <img src={imgSrc} />
       <h4>{title}</h4>
     </div>
-  )
+  );
 }

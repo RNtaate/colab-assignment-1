@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import styles from '../styles/About.module.css'
-import profileImage from '../assets/profile_photo-min.jpg'
-import formStyles from '../styles/ContactForm.module.css'
+import styles from '../styles/About.module.css';
+import profileImage from '../assets/profile_photo-min.jpg';
+import formStyles from '../styles/ContactForm.module.css';
 
 export default function About() {
   return (
@@ -16,32 +16,48 @@ export default function About() {
         >
           <div className={`${styles.avatarSocialsWrapper} d-flex flex-col`}>
             <div className={`${styles.imageContainer}`}>
-              <img src={profileImage} altg="profile image" />
+              <img src={profileImage} alt="profile image" />
             </div>
 
             <div
               className={`${styles.socialsDiv} d-flex align-items-center justify-content-center`}
             >
-              <a href="https://github.com/RNtaate" target="_blank">
+              <a
+                href="https://github.com/RNtaate"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github" />
                 </span>
               </a>
 
-              <a href="https://linkedin.com/in/roy-ntaate" target="_blank">
+              <a
+                href="https://linkedin.com/in/roy-ntaate"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>
-                  <i class="fa-brands fa-linkedin"></i>
+                  <i className="fa-brands fa-linkedin" />
                 </span>
               </a>
-              <a href="https://twitter.com/RNtaate" target="_blank">
+              <a
+                href="https://twitter.com/RNtaate"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>
-                  <i class="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-twitter" />
                 </span>
               </a>
 
-              <a href="mailto:royhyde14@gmail.com" target="_blank">
+              <a
+                href="mailto:royhyde14@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span>
-                  <i class="fa-solid fa-envelope"></i>
+                  <i className="fa-solid fa-envelope" />
                 </span>
               </a>
             </div>
@@ -49,9 +65,9 @@ export default function About() {
 
           <div className={styles.detailsSection}>
             <p>
-              "My name is Roy Ntaate and I am a Full-Stack Web Developer who is
-              enthusiastic about technological advancement and highly values
-              collaborative programming as well as writing efficient and
+              &ldquo;My name is Roy Ntaate and I am a Full-Stack Web Developer
+              who is enthusiastic about technological advancement and highly
+              values collaborative programming as well as writing efficient and
               scalable code for clients or organizations.
             </p>
             <p>
@@ -72,13 +88,17 @@ export default function About() {
             </p>
             <p>
               I currently work as a Freelance Web Developer and I am open to any
-              development opportunities."
+              development opportunities.&ldquo;
             </p>
             <a
               href="https://docs.google.com/file/d/1uE8I6PEqIwVEUDtsBsCYLxVtbgE81qohwuPFfhvhMEk/view"
               target="_blank"
+              rel="noreferrer"
             >
-              <button className={formStyles.contactFormSubmitButton}>
+              <button
+                className={formStyles.contactFormSubmitButton}
+                type="button"
+              >
                 GET MY RESUME
               </button>
             </a>
@@ -86,5 +106,5 @@ export default function About() {
         </div>
       </div>
     </div>
-  )
+  );
 }

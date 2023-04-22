@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-import styles from '../styles/ContactForm.module.css'
+import styles from '../styles/ContactForm.module.css';
 
 export default function ContactForm() {
   return (
@@ -30,5 +30,5 @@ export default function ContactForm() {
         </button>
       </form>
     </div>
-  )
+  );
 }

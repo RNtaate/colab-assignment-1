@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import styles from '../styles/Extra.module.css'
-import aboutStyles from '../styles/About.module.css'
-import Joke from '../components/Joke'
+import styles from '../styles/Extra.module.css';
+import aboutStyles from '../styles/About.module.css';
+import Joke from '../components/Joke';
 
 export default function Extra() {
   return (
@@ -14,7 +14,7 @@ export default function Extra() {
       >
         <h1 className={`${aboutStyles.aboutHeading} text-center`}>EXTRA</h1>
 
-        <h3 className={`text-center`}>
+        <h3 className="text-center">
           "Every body deserves a little laughter in their lives. Which is why a
           random joke will show up on this page every time you visit it. 😊"
         </h3>
@@ -22,5 +22,5 @@ export default function Extra() {
         <Joke />
       </div>
     </div>
-  )
+  );
 }

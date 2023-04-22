@@ -1,9 +1,9 @@
-import './styles/App.css'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Extra from './Pages/Extra'
-import NavBar from './components/NavBar'
-import { Route, Routes, Link } from 'react-router-dom'
+import './styles/App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Extra from './Pages/Extra';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path="/extra" element={<Extra />} />
       </Routes>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

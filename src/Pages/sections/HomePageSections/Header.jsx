@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import styles from '../../../styles/Header.module.css'
-import profileImage from '../../../assets/profile_photo-min.jpg'
-import dots from '../../../assets/dots.svg'
+import styles from '../../../styles/Header.module.css';
+import profileImage from '../../../assets/profile_photo-min.jpg';
+import dots from '../../../assets/dots.svg';
 
 export default function Header() {
   return (
@@ -37,31 +37,31 @@ export default function Header() {
           <div
             className={`${styles.headerSocialsDiv} d-flex align-items-center`}
           >
-            <a href="https://github.com/RNtaate" target="_blank">
+            <a href="https://github.com/RNtaate" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github" />
               </span>
             </a>
 
-            <a href="https://linkedin.com/in/roy-ntaate" target="_blank">
+            <a href="https://linkedin.com/in/roy-ntaate" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin" />
               </span>
             </a>
-            <a href="https://twitter.com/RNtaate" target="_blank">
+            <a href="https://twitter.com/RNtaate" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter" />
               </span>
             </a>
 
-            <a href="mailto:royhyde14@gmail.com" target="_blank">
+            <a href="mailto:royhyde14@gmail.com" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope" />
               </span>
             </a>
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 }

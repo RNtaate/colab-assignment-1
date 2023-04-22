@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-import frontendImage from '../../../assets/frontend3.svg'
-import backendImage from '../../../assets/backend1.svg'
-import mobileImage from '../../../assets/mobile-dev.svg'
-import WhatIDoCard from '../../../components/WhatIDoCard'
-import whatIDoImage from '../../../assets/whatIDo.svg'
-import styles from '../../../styles/WhatIDo.module.css'
-import SkillsCarousel from '../../../components/SkillsCarousel'
+import frontendImage from '../../../assets/frontend3.svg';
+import backendImage from '../../../assets/backend1.svg';
+import mobileImage from '../../../assets/mobile-dev.svg';
+import WhatIDoCard from '../../../components/WhatIDoCard';
+import whatIDoImage from '../../../assets/whatIDo.svg';
+import styles from '../../../styles/WhatIDo.module.css';
+import SkillsCarousel from '../../../components/SkillsCarousel';
 
 export default function WhatIDo() {
-  const svgDimensions = 100
+  const svgDimensions = 100;
 
   return (
     <section
@@ -31,25 +31,25 @@ export default function WhatIDo() {
           <WhatIDoCard
             imgSrc={frontendImage}
             size={svgDimensions}
-            title={'Frontend Development'}
-            corner={'borderTopRightRadius'}
+            title="Frontend Development"
+            corner="borderTopRightRadius"
           />
           <WhatIDoCard
             imgSrc={backendImage}
             size={svgDimensions}
-            title={'Backend Development'}
-            corner={'borderBottomRightRadius'}
+            title="Backend Development"
+            corner="borderBottomRightRadius"
           />
           <WhatIDoCard
             imgSrc={mobileImage}
             size={svgDimensions}
-            title={'Mobile Development'}
-            corner={'borderBottomLeftRadius'}
+            title="Mobile Development"
+            corner="borderBottomLeftRadius"
           />
         </div>
       </div>
 
       <SkillsCarousel />
     </section>
-  )
+  );
 }

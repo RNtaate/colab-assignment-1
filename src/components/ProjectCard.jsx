@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-import styles from '../styles/ProjectCard.module.css'
+import styles from '../styles/ProjectCard.module.css';
 
 export default function ProjectCard({ project }) {
-  const { title, desc, image, tags, github, live, view } = project
+  const {
+    title, desc, image, tags, github, live, view,
+  } = project;
   return (
     <div
       className={`${styles.projectWrapper} d-flex justify-content-center align-items-center`}
@@ -19,24 +21,22 @@ export default function ProjectCard({ project }) {
         <div
           className={`${styles.projectTagsDiv} d-flex align-items-center justify-content-center`}
         >
-          {tags.map((tag, index) => {
-            return <span key={index}>{tag}</span>
-          })}
+          {tags.map((tag, index) => <span key={index}>{tag}</span>)}
         </div>
 
         <div className={`${styles.linksDiv} d-flex align-items-center`}>
           {github && (
-            <a href={github} target="_blank">
+            <a href={github} target="_blank" rel="noreferrer">
               <span>
-                <i className="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github" />
               </span>
             </a>
           )}
 
           {live && (
-            <a href={live} target="_blank">
+            <a href={live} target="_blank" rel="noreferrer">
               <span>
-                <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                <i className="fa-solid fa-arrow-up-right-from-square" />
               </span>
             </a>
           )}
@@ -48,5 +48,5 @@ export default function ProjectCard({ project }) {
         </span>
       </div>
     </div>
-  )
+  );
 }

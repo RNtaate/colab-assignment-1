@@ -1,34 +1,34 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
-import styles from '../styles/Joke.module.css'
-import { API_URL } from '../services/HelperConstants'
+import styles from '../styles/Joke.module.css';
+import { API_URL } from '../services/HelperConstants';
 
 export default function Joke() {
-  const [jokeData, setJokeData] = useState(null)
-  const [error, setError] = useState('')
+  const [jokeData, setJokeData] = useState(null);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     async function fetchAJoke() {
       try {
-        const result = await fetch(`${API_URL}`)
-        const data = await result.json()
-        setJokeData({ ...data })
-        setError('')
-        console.log(data)
+        const result = await fetch(`${API_URL}`);
+        const data = await result.json();
+        setJokeData({ ...data });
+        setError('');
+        console.log(data);
       } catch (e) {
-        setError('Error: Something went wrong, May be come back later!')
+        setError('Error: Something went wrong, May be come back later!');
       }
     }
 
-    fetchAJoke()
-  }, [])
+    fetchAJoke();
+  }, []);
 
   return (
     <div
       className={`${styles.jokeContainer} d-flex justify-content-center align-items-center`}
     >
-      <span className={styles.upperSpan}></span>
-      <span className={styles.lowerSpan}></span>
+      <span className={styles.upperSpan} />
+      <span className={styles.lowerSpan} />
 
       <div
         className={`${styles.jokeDetails} bg-secondary d-flex flex-col justify-content-center`}
@@ -36,7 +36,10 @@ export default function Joke() {
         {jokeData?.punchline ? (
           <>
             <p className={styles.setUp}>{jokeData.setup}</p>
-            <p className={styles.punchline}>{jokeData.punchline}.</p>
+            <p className={styles.punchline}>
+              {jokeData.punchline}
+              .
+            </p>
           </>
         ) : error ? (
           <p className={styles.errorParagraph}>{error}</p>
@@ -45,5 +48,5 @@ export default function Joke() {
         )}
       </div>
     </div>
-  )
+  );
 }

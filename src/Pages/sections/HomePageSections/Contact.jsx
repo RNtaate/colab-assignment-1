@@ -1,38 +1,37 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 
-import styles from '../../../styles/Contact.module.css'
-import headerStyles from '../../../styles/Header.module.css'
-import ContactForm from '../../../components/ContactForm'
-import headShot from '../../../assets/cartoon_headshot.jpg'
-import dots from '../../../assets/dots.svg'
+import styles from '../../../styles/Contact.module.css';
+import headerStyles from '../../../styles/Header.module.css';
+import ContactForm from '../../../components/ContactForm';
+import headShot from '../../../assets/cartoon_headshot.jpg';
+import dots from '../../../assets/dots.svg';
 
 export default function Contact() {
-  const [reveal, setReveal] = useState(false)
+  const [reveal, setReveal] = useState(false);
 
   useEffect(() => {
     window.addEventListener('scroll', function () {
       if (
-        this.window.innerHeight + this.window.scrollY >=
-        this.document.body.offsetHeight
+        this.window.innerHeight + this.window.scrollY
+        >= this.document.body.offsetHeight
       ) {
-        setReveal(true)
+        setReveal(true);
       } else {
-        setReveal(false)
+        setReveal(false);
       }
-    })
+    });
 
-    return () =>
-      window.removeEventListener('scroll', function () {
-        if (
-          this.window.innerHeight + this.window.scrollY >=
-          this.document.querySelector('main').offsetHeight
-        ) {
-          setReveal(true)
-        } else {
-          setReveal(false)
-        }
-      })
-  }, [])
+    return () => window.removeEventListener('scroll', function () {
+      if (
+        this.window.innerHeight + this.window.scrollY
+          >= this.document.querySelector('main').offsetHeight
+      ) {
+        setReveal(true);
+      } else {
+        setReveal(false);
+      }
+    });
+  }, []);
 
   return (
     <section
@@ -60,31 +59,31 @@ export default function Contact() {
           <div
             className={`${headerStyles.headerSocialsDiv} ${styles.contactSocialsDiv} d-flex align-items-center`}
           >
-            <a href="https://github.com/RNtaate" target="_blank">
+            <a href="https://github.com/RNtaate" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github" />
               </span>
             </a>
 
-            <a href="https://linkedin.com/in/roy-ntaate" target="_blank">
+            <a href="https://linkedin.com/in/roy-ntaate" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin" />
               </span>
             </a>
-            <a href="https://twitter.com/RNtaate" target="_blank">
+            <a href="https://twitter.com/RNtaate" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter" />
               </span>
             </a>
 
-            <a href="mailto:royhyde14@gmail.com" target="_blank">
+            <a href="mailto:royhyde14@gmail.com" target="_blank" rel="noreferrer">
               <span>
-                <i class="fa-solid fa-envelope"></i>
+                <i className="fa-solid fa-envelope" />
               </span>
             </a>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
