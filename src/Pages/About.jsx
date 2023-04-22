@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from '../styles/About.module.css'
-import profileImage from '../assets/profile_photo.jpg'
+import profileImage from '../assets/profile_photo-min.jpg'
 import formStyles from '../styles/ContactForm.module.css'
 
 export default function About() {

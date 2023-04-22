@@ -1,7 +1,7 @@
 import React from 'react'
 
 import styles from '../../../styles/Header.module.css'
-import profileImage from '../../../assets/profile_photo.jpg'
+import profileImage from '../../../assets/profile_photo-min.jpg'
 import dots from '../../../assets/dots.svg'
 
 export default function Header() {
