@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import styles from '../styles/Joke.module.css'
+import { API_URL } from '../services/HelperConstants'
 
 export default function Joke() {
   const [jokeData, setJokeData] = useState(null)
@@ -9,9 +10,7 @@ export default function Joke() {
   useEffect(() => {
     async function fetchAJoke() {
       try {
-        const result = await fetch(
-          'https://official-joke-api.appspot.com/random_joke'
-        )
+        const result = await fetch(`${API_URL}`)
         const data = await result.json()
         setJokeData({ ...data })
         setError('')
