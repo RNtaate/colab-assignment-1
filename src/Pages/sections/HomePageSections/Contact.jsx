@@ -25,7 +25,7 @@ export default function Contact() {
       window.removeEventListener('scroll', function () {
         if (
           this.window.innerHeight + this.window.scrollY >=
-          this.document.body.offsetHeight
+          this.document.querySelector('main').offsetHeight
         ) {
           setReveal(true)
         } else {

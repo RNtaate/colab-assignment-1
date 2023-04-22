@@ -76,6 +76,7 @@ button {
   color: white;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 a:hover {
@@ -84,6 +85,11 @@ a:hover {
 
 button {
   background-color: transparent;
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
 }
 
 body {
