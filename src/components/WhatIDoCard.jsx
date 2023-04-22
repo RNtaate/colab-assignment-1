@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from '../styles/WhatIDoCard.module.css';
 
@@ -14,3 +15,9 @@ export default function WhatIDoCard({ imgSrc, title, corner }) {
     </div>
   );
 }
+
+WhatIDoCard.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  corner: PropTypes.string.isRequired,
+};

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import styles from '../styles/ProjectCard.module.css';
 
@@ -21,7 +22,9 @@ export default function ProjectCard({ project }) {
         <div
           className={`${styles.projectTagsDiv} d-flex align-items-center justify-content-center`}
         >
-          {tags.map((tag, index) => <span key={index}>{tag}</span>)}
+          {tags.map((tag) => (
+            <span key={`${tag}${crypto.randomUUID()}`}>{tag}</span>
+          ))}
         </div>
 
         <div className={`${styles.linksDiv} d-flex align-items-center`}>
@@ -50,3 +53,7 @@ export default function ProjectCard({ project }) {
     </div>
   );
 }
+
+ProjectCard.propTypes = {
+  project: PropTypes.instanceOf(Object).isRequired,
+};
