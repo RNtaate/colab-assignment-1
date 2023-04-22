@@ -1,0 +1,29 @@
+.navBar {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(204, 204, 204, 0.9);
+  bottom: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.navBarList {
+  padding: 10px 0;
+  gap: 20px;
+}
+
+.navBarList > li > a {
+  color: black;
+}
+
+.navBarList > li > a > span {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+}
+
+.navBarList > li > a > span:hover {
+  border-bottom: 2px solid var(--main-pink);
+}
