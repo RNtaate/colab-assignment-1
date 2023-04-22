@@ -43,10 +43,6 @@
   border-bottom: 2px solid transparent;
 }
 
-.navBarList > li > a > span:hover {
-  border-bottom: 2px solid var(--main-pink);
-}
-
 @media screen and (min-width: 800px) {
   .navBar {
     padding: 20px 70px;

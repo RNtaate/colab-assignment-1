@@ -1,34 +1,34 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import styles from '../styles/NavBar.module.css'
 import logoImage from '../assets/logo.svg'
 export default function NavBar() {
   return (
     <nav className={`${styles.navBar} d-flex align-items-center`}>
       <div className={`${styles.navLogo}`}>
-        <Link to="/">
+        <NavLink to="/">
           <div className={`${styles.logoDiv}`}>
             <img src={logoImage} alt="Logo" />
           </div>
-        </Link>
+        </NavLink>
       </div>
       <ul
         className={`${styles.navBarList} d-flex align-items-center justify-content-center`}
       >
         <li>
-          <Link to="/">
+          <NavLink to="/" className={'navbarLink'}>
             <span>Home</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/about">
+          <NavLink to="/about" className={'navbarLink'}>
             <span>About</span>
-          </Link>
+          </NavLink>
         </li>
         <li>
-          <Link to="/extra">
+          <NavLink to="/extra" className={'navbarLink'}>
             <span>Extra</span>
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
