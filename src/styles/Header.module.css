@@ -9,7 +9,6 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .headerContentsWrapper {
@@ -85,5 +84,11 @@
 @media screen and (min-width: 800px) {
   .avatarContainer {
     display: block;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .header {
+    background-attachment: fixed;
   }
 }
