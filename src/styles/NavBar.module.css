@@ -44,13 +44,15 @@
   border-bottom: 2px solid transparent;
 }
 
-/* @media screen and (min-width: 800px) and (min-height: 550px) {
+@media screen and (min-width: 800px) and (min-height: 550px) {
   .navBar {
     padding: 20px 70px;
     position: absolute;
     top: 0;
+    bottom: auto;
     left: 0;
-    transform: translateY(0);
+    right: 0;
+    width: 100%;
     background-color: transparent;
     justify-content: space-between;
   }
@@ -67,4 +69,4 @@
     color: white;
     font-weight: 600;
   }
-} */
+}
