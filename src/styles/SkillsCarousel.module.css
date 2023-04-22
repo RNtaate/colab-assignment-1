@@ -18,6 +18,7 @@
   animation: carousel1 var(--scroll-speed) linear infinite;
   left: 0;
 }
+
 .carouselDiv2 {
   animation: carousel2 var(--scroll-speed) linear infinite;
   left: calc(var(--side) * 11);
@@ -27,6 +28,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translate(calc((-1 * var(--side) * 11)));
   }
@@ -36,6 +38,7 @@
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translate(calc((-1 * var(--side) * 11)));
   }

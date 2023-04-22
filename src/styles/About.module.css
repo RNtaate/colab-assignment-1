@@ -6,11 +6,6 @@
   min-height: 100vh;
   padding: 100px 0;
   overflow: hidden;
-  /* background-image: url('../assets/night_sky.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; */
 }
 
 .aboutHeading {
@@ -33,7 +28,7 @@
 
 .imageContainer {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   border: 10px solid var(--main-pink);
   border-radius: 10px;
@@ -73,9 +68,6 @@
   font-size: 1.5em;
   font-weight: 200;
   line-height: 1.3em;
-  /* text-shadow: 0 2px 1px rgb(211, 65, 82, var(--opacity)),
-    -1px 3px 1px rgb(211, 65, 82, var(--opacity)),
-    -2px 5px 1px rgb(211, 65, 82, var(--opacity)); */
 }
 
 @media screen and (min-width: 800px) {

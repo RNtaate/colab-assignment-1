@@ -17,7 +17,7 @@
   width: 100%;
   max-width: 450px;
   min-width: 320px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: rgba(211, 65, 82, 0.7);
 }

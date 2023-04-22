@@ -8,7 +8,7 @@
   position: absolute;
   width: 35%;
   height: 50%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   background-color: var(--main-pink);
   transition: all 1s ease-in-out;
 }

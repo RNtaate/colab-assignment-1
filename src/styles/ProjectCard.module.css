@@ -1,6 +1,6 @@
 .projectWrapper {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   max-width: 400px;
   background-size: cover;
   background-position: center;
