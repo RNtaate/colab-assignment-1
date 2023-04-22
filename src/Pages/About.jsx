@@ -74,9 +74,14 @@ export default function About() {
               I currently work as a Freelance Web Developer and I am open to any
               development opportunities."
             </p>
-            <button className={formStyles.contactFormSubmitButton}>
-              GET MY RESUME
-            </button>
+            <a
+              href="https://docs.google.com/file/d/1uE8I6PEqIwVEUDtsBsCYLxVtbgE81qohwuPFfhvhMEk/view"
+              target="_blank"
+            >
+              <button className={formStyles.contactFormSubmitButton}>
+                GET MY RESUME
+              </button>
+            </a>
           </div>
         </div>
       </div>
