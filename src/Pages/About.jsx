@@ -16,7 +16,7 @@ export default function About() {
         >
           <div className={`${styles.avatarSocialsWrapper} d-flex flex-col`}>
             <div className={`${styles.imageContainer}`}>
-              <img src={profileImage} alt="profile image" />
+              <img src={profileImage} alt="profile" />
             </div>
 
             <div

@@ -5,7 +5,6 @@ import * as svgImages from '../assets/colab carousel svgs';
 
 export default function SkillsCarousel() {
   const svgSize = 75;
-  console.log(Object.keys(svgImages).length);
 
   return (
     <div className={`${styles.carouselWrapper}`}>
@@ -15,11 +14,13 @@ export default function SkillsCarousel() {
         {Object.keys(svgImages).map((singleKey) => (
           <div
             className={`${styles.svgImageDiv} d-flex justify-content-center align-items-center`}
+            key={`${singleKey.toString()}`}
           >
             <img
               width={svgSize}
               height={svgSize}
               src={svgImages[`${singleKey}`]}
+              alt="stack"
             />
           </div>
         ))}
@@ -31,11 +32,13 @@ export default function SkillsCarousel() {
         {Object.keys(svgImages).map((singleKey) => (
           <div
             className={`${styles.svgImageDiv} d-flex justify-content-center align-items-center`}
+            key={`${singleKey.toString()}`}
           >
             <img
               width={svgSize}
               height={svgSize}
               src={svgImages[`${singleKey}`]}
+              alt="stack"
             />
           </div>
         ))}

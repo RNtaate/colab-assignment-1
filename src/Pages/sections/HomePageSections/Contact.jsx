@@ -10,21 +10,18 @@ export default function Contact() {
   const [reveal, setReveal] = useState(false);
 
   useEffect(() => {
-    window.addEventListener('scroll', function () {
-      if (
-        this.window.innerHeight + this.window.scrollY
-        >= this.document.body.offsetHeight
-      ) {
+    window.addEventListener('scroll', () => {
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         setReveal(true);
       } else {
         setReveal(false);
       }
     });
 
-    return () => window.removeEventListener('scroll', function () {
+    return () => window.removeEventListener('scroll', () => {
       if (
-        this.window.innerHeight + this.window.scrollY
-          >= this.document.querySelector('main').offsetHeight
+        window.innerHeight + window.scrollY
+          >= document.querySelector('main').offsetHeight
       ) {
         setReveal(true);
       } else {
@@ -44,7 +41,7 @@ export default function Contact() {
         <div
           className={`${styles.contactImageWrapper} align-items-center justify-content-center`}
         >
-          <img className={styles.contactImageSvg} src={dots} />
+          <img className={styles.contactImageSvg} src={dots} alt="dots" />
           <div
             className={`${styles.contactImageContainer} d-flex align-items-center justify-content-center`}
           >
@@ -59,24 +56,40 @@ export default function Contact() {
           <div
             className={`${headerStyles.headerSocialsDiv} ${styles.contactSocialsDiv} d-flex align-items-center`}
           >
-            <a href="https://github.com/RNtaate" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/RNtaate"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-brands fa-github" />
               </span>
             </a>
 
-            <a href="https://linkedin.com/in/roy-ntaate" target="_blank" rel="noreferrer">
+            <a
+              href="https://linkedin.com/in/roy-ntaate"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-brands fa-linkedin" />
               </span>
             </a>
-            <a href="https://twitter.com/RNtaate" target="_blank" rel="noreferrer">
+            <a
+              href="https://twitter.com/RNtaate"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-brands fa-twitter" />
               </span>
             </a>
 
-            <a href="mailto:royhyde14@gmail.com" target="_blank" rel="noreferrer">
+            <a
+              href="mailto:royhyde14@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-solid fa-envelope" />
               </span>

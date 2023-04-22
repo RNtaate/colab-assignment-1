@@ -1,22 +1,26 @@
 import React, { useState, useEffect } from 'react';
 
 import styles from '../styles/Joke.module.css';
-import { API_URL } from '../services/HelperConstants';
+import API_URL from '../services/HelperConstants';
 
 export default function Joke() {
   const [jokeData, setJokeData] = useState(null);
-  const [error, setError] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
+    setIsLoading(true);
+    setError(null);
     async function fetchAJoke() {
       try {
         const result = await fetch(`${API_URL}`);
         const data = await result.json();
         setJokeData({ ...data });
-        setError('');
-        console.log(data);
+        setError(null);
+        setIsLoading(false);
       } catch (e) {
         setError('Error: Something went wrong, May be come back later!');
+        setIsLoading(false);
       }
     }
 
@@ -33,19 +37,15 @@ export default function Joke() {
       <div
         className={`${styles.jokeDetails} bg-secondary d-flex flex-col justify-content-center`}
       >
-        {jokeData?.punchline ? (
+        {!isLoading && !error && jokeData?.punchline && (
           <>
             <p className={styles.setUp}>{jokeData.setup}</p>
-            <p className={styles.punchline}>
-              {jokeData.punchline}
-              .
-            </p>
+            <p className={styles.punchline}>{jokeData.punchline}</p>
           </>
-        ) : error ? (
-          <p className={styles.errorParagraph}>{error}</p>
-        ) : (
-          <p>Fetching a joke ...</p>
         )}
+
+        {isLoading && <p>Fetching a joke ...</p>}
+        {error && <p className={styles.errorParagraph}>{error}</p>}
       </div>
     </div>
   );

@@ -23,7 +23,7 @@ export default function WhatIDo() {
         <div
           className={`${styles.imageDiv} d-flex align-items-center justify-content-center`}
         >
-          <img src={whatIDoImage} />
+          <img src={whatIDoImage} alt="What I do" />
         </div>
         <div
           className={`${styles.cardsContainerDiv} d-flex justify-content-center`}

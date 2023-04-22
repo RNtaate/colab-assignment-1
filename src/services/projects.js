@@ -4,7 +4,7 @@ import norpmoviesImage from '../assets/norp_movies-min.png';
 import soundImage from '../assets/sound-min.png';
 import bookingsImage from '../assets/booking-appointments.jpg';
 
-export const projectsData = [
+const projectsData = [
   {
     title: 'Endless Runner',
     desc: 'A platform game built using Phaser 3 Library.',
@@ -50,3 +50,5 @@ export const projectsData = [
     view: 'DESKTOP',
   },
 ];
+
+export default projectsData;

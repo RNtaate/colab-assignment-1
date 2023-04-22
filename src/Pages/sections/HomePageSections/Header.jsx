@@ -13,11 +13,11 @@ export default function Header() {
         className={`${styles.headerContentsWrapper} d-flex align-items-center justify-content-center`}
       >
         <div className={`${styles.avatarContainer}`}>
-          <img className={styles.dotsImg} src={dots} />
+          <img className={styles.dotsImg} src={dots} alt="dots" />
           <div className={styles.avatarDiv}>
             <img
               src={profileImage}
-              alt="Profile Image"
+              alt="Profile"
               className={styles.avatarImg}
             />
           </div>
@@ -37,24 +37,40 @@ export default function Header() {
           <div
             className={`${styles.headerSocialsDiv} d-flex align-items-center`}
           >
-            <a href="https://github.com/RNtaate" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/RNtaate"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-brands fa-github" />
               </span>
             </a>
 
-            <a href="https://linkedin.com/in/roy-ntaate" target="_blank" rel="noreferrer">
+            <a
+              href="https://linkedin.com/in/roy-ntaate"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-brands fa-linkedin" />
               </span>
             </a>
-            <a href="https://twitter.com/RNtaate" target="_blank" rel="noreferrer">
+            <a
+              href="https://twitter.com/RNtaate"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-brands fa-twitter" />
               </span>
             </a>
 
-            <a href="mailto:royhyde14@gmail.com" target="_blank" rel="noreferrer">
+            <a
+              href="mailto:royhyde14@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               <span>
                 <i className="fa-solid fa-envelope" />
               </span>

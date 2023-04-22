@@ -9,7 +9,7 @@ export default function WhatIDoCard({ imgSrc, title, corner }) {
       className={`${styles.cardContainer} bg-secondary d-flex align-items-center`}
       style={{ borderRadius: `${curve}`, [`${corner}`]: '0' }}
     >
-      <img src={imgSrc} />
+      <img src={imgSrc} alt="What I do skill" />
       <h4>{title}</h4>
     </div>
   );

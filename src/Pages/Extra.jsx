@@ -15,8 +15,9 @@ export default function Extra() {
         <h1 className={`${aboutStyles.aboutHeading} text-center`}>EXTRA</h1>
 
         <h3 className="text-center">
-          "Every body deserves a little laughter in their lives. Which is why a
-          random joke will show up on this page every time you visit it. 😊"
+          &#34;Every body deserves a little laughter in their lives. Which is
+          why a random joke will show up on this page every time you visit it.
+          😊&#34;
         </h3>
 
         <Joke />
