@@ -8,9 +8,9 @@ export default function SkillsCarousel() {
   console.log(Object.keys(svgImages).length)
 
   return (
-    <div className={`${styles.carouselWrapper} d-flex align-items-center`}>
+    <div className={`${styles.carouselWrapper}`}>
       <div
-        className={`${styles.carouselDiv} d-flex justify-content-center align-items-center`}
+        className={`${styles.carouselDiv} ${styles.carouselDiv1} d-flex justify-content-center align-items-center`}
       >
         {Object.keys(svgImages).map((singleKey) => {
           return (
@@ -28,7 +28,7 @@ export default function SkillsCarousel() {
       </div>
 
       <div
-        className={`${styles.carouselDiv} d-flex justify-content-center align-items-center`}
+        className={`${styles.carouselDiv} ${styles.carouselDiv2} d-flex justify-content-center align-items-center`}
       >
         {Object.keys(svgImages).map((singleKey) => {
           return (

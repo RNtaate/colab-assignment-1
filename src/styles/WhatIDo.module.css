@@ -1,3 +1,7 @@
+.whatIDoSection {
+  padding: 100px 0;
+}
+
 .cardsContainerDiv {
   gap: 30px;
   flex-wrap: wrap;
