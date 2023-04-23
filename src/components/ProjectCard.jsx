@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 import styles from '../styles/ProjectCard.module.css';
 
 export default function ProjectCard({ project, name }) {
-  const { title, desc, image, tags, github, live, view } = project;
+  const {
+    title, desc, image, tags, github, live, view,
+  } = project;
   return (
     <div
       className={`${styles.projectWrapper} d-flex justify-content-center align-items-center`}
@@ -57,4 +59,5 @@ export default function ProjectCard({ project, name }) {
 
 ProjectCard.propTypes = {
   project: PropTypes.instanceOf(Object).isRequired,
+  name: PropTypes.string.isRequired,
 };
