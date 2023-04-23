@@ -26,12 +26,13 @@
 .jokeDetails {
   padding: 30px 20px;
   width: 100%;
-  min-height: 100px;
+  min-height: 130px;
+  max-height: 130px;
   z-index: 2;
 }
 
 .setUp {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .errorParagraph {
