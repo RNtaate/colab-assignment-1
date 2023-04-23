@@ -25,17 +25,36 @@ export default function Header() {
         <div
           className={`${styles.heroDiv} d-flex flex-col justify-content-center align-items-center`}
         >
-          <h1 className={styles.heroName}>ROY</h1>
+          <h1
+            className={`${styles.heroName}`}
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            ROY
+          </h1>
 
-          <h2>FULL-STACK WEB DEVELOPER</h2>
+          <h2
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            FULL-STACK WEB DEVELOPER
+          </h2>
 
-          <p>
+          <p
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
             👋 Hey there!, I am Roy Ntaate, a Full-Stack Web Developer and tech
             enthusiast who is based in Kampala, Uganda 🇺🇬.
           </p>
 
           <div
             className={`${styles.headerSocialsDiv} d-flex align-items-center`}
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="1600"
           >
             <a
               href="https://github.com/RNtaate"

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import styles from '../styles/ProjectCard.module.css';
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, name }) {
   const {
     title, desc, image, tags, github, live, view,
   } = project;
@@ -13,6 +13,9 @@ export default function ProjectCard({ project }) {
       style={{
         backgroundImage: `url(${image})`,
       }}
+      data-aos={name}
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
     >
       <div
         className={`${styles.cardDetails} d-flex flex-col justify-content-center align-items-center`}
@@ -56,4 +59,5 @@ export default function ProjectCard({ project }) {
 
 ProjectCard.propTypes = {
   project: PropTypes.instanceOf(Object).isRequired,
+  name: PropTypes.string.isRequired,
 };

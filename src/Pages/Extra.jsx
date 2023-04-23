@@ -12,9 +12,20 @@ export default function Extra() {
       <div
         className={`${styles.extraContainer} d-flex flex-col align-items-center justify-content-center`}
       >
-        <h1 className={`${aboutStyles.aboutHeading} text-center`}>EXTRA</h1>
+        <h1
+          className={`${aboutStyles.aboutHeading} text-center`}
+          data-aos="fade"
+          data-aos-duration="1000"
+        >
+          EXTRA
+        </h1>
 
-        <h3 className="text-center">
+        <h3
+          className="text-center"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
+        >
           &#34;Every body deserves a little laughter in their lives. Which is
           why a random joke will show up on this page every time you visit it.
           😊&#34;

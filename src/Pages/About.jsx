@@ -10,7 +10,13 @@ export default function About() {
       <div
         className={`${styles.aboutContainer} d-flex flex-col align-items-center`}
       >
-        <h1 className={`${styles.aboutHeading} text-center`}>ABOUT</h1>
+        <h1
+          className={`${styles.aboutHeading} text-center`}
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          ABOUT
+        </h1>
         <div
           className={`${styles.aboutDetailsWrapper} d-flex justify-content-center`}
         >
@@ -64,19 +70,31 @@ export default function About() {
           </div>
 
           <div className={styles.detailsSection}>
-            <p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               &ldquo;My name is Roy Ntaate and I am a Full-Stack Web Developer
               who is enthusiastic about technological advancement and highly
               values collaborative programming as well as writing efficient and
               scalable code for clients or organizations.
             </p>
-            <p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               I started as a self-taught developer but its limitations
               especially in scope drove me to pursue a deeper and more
               structured form of development curriculum which led me to
               Microverse--An online software development learning institution.
             </p>
-            <p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               While at Microverse, I had the opportunity to collaboratively work
               with individuals from all over the world on a wide range of
               projects ranging from landing pages to APIs and as a result, I
@@ -86,7 +104,11 @@ export default function About() {
               skills such as pair programming, communication, conflict
               resolution, and management.
             </p>
-            <p>
+            <p
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
               I currently work as a Freelance Web Developer and I am open to any
               development opportunities.&ldquo;
             </p>
