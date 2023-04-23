@@ -120,9 +120,6 @@ export default function About() {
               <button
                 className={formStyles.contactFormSubmitButton}
                 type="button"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-out"
               >
                 GET MY RESUME
               </button>
