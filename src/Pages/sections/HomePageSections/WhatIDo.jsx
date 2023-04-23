@@ -15,13 +15,22 @@ export default function WhatIDo() {
     <section
       className={`${styles.whatIDoSection} bg-primary d-flex flex-col align-items-center`}
     >
-      <h2 className={`${styles.whatIDoHeading} text-center`}>WHAT I DO</h2>
+      <h2
+        className={`${styles.whatIDoHeading} text-center`}
+        data-aos="fade-down"
+      >
+        WHAT I DO
+      </h2>
 
       <div
         className={`${styles.whatIDoContainer} d-flex align-items-center justify-content-center`}
       >
         <div
           className={`${styles.imageDiv} d-flex align-items-center justify-content-center`}
+          data-aos="fade-left"
+          data-aos-delay="400"
+          data-aos-duration="600"
+          data-aos-easing="ease-in-out"
         >
           <img src={whatIDoImage} alt="What I do" />
         </div>

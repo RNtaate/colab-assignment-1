@@ -25,7 +25,7 @@ export default function Header() {
         <div
           className={`${styles.heroDiv} d-flex flex-col justify-content-center align-items-center`}
         >
-          <h1 className={styles.heroName}>ROY</h1>
+          <h1 className={`${styles.heroName}`} data-aos="fade-right" data-aos-delay="1000" data-aos-duration="1500" data-aos-mirror="true">ROY</h1>
 
           <h2>FULL-STACK WEB DEVELOPER</h2>
 
