@@ -5,6 +5,7 @@ import Header from './sections/HomePageSections/Header';
 import WhatIDo from './sections/HomePageSections/WhatIDo';
 import Projects from './sections/HomePageSections/Projects';
 import Contact from './sections/HomePageSections/Contact';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const homeVariants = {
@@ -34,9 +35,11 @@ export default function Home() {
       animate="visible"
       exit="exit"
     >
-      <Header />
-      <WhatIDo />
-      <Projects />
+      <div className={styles.forwardDiv}>
+        <Header />
+        <WhatIDo />
+        <Projects />
+      </div>
       <Contact />
     </motion.div>
   );
