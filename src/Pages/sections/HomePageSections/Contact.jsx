@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import styles from '../../../styles/Contact.module.css';
 import headerStyles from '../../../styles/Header.module.css';
@@ -7,33 +7,9 @@ import headShot from '../../../assets/cartoon_headshot.jpg';
 import dots from '../../../assets/dots.svg';
 
 export default function Contact() {
-  const [reveal, setReveal] = useState(false);
-
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-        setReveal(true);
-      } else {
-        setReveal(false);
-      }
-    });
-
-    return () => window.removeEventListener('scroll', () => {
-      if (
-        window.innerHeight + window.scrollY
-          >= document.querySelector('main').offsetHeight
-      ) {
-        setReveal(true);
-      } else {
-        setReveal(false);
-      }
-    });
-  }, []);
-
   return (
     <section
       className={`${styles.contactSection} bg-primary d-flex justify-content-center align-items-center`}
-      style={{ zIndex: reveal ? 0 : -1 }}
     >
       <div
         className={`${styles.contactWrapper} d-flex align-items-center justify-content-center`}
