@@ -1,13 +1,38 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import styles from '../styles/Extra.module.css';
 import aboutStyles from '../styles/About.module.css';
 import Joke from '../components/Joke';
 
 export default function Extra() {
+  const extraPageVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: 'easeInOut',
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
   return (
-    <div
+    <motion.div
       className={`${styles.extraMain} bg-primary d-flex justify-content-center align-items-center`}
+      variants={extraPageVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
     >
       <div
         className={`${styles.extraContainer} d-flex flex-col align-items-center justify-content-center`}
@@ -33,6 +58,6 @@ export default function Extra() {
 
         <Joke />
       </div>
-    </div>
+    </motion.div>
   );
 }

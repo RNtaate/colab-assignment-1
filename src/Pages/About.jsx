@@ -1,12 +1,39 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 import styles from '../styles/About.module.css';
 import profileImage from '../assets/profile_photo-min.jpg';
 import formStyles from '../styles/ContactForm.module.css';
 
 export default function About() {
+  const aboutVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: 'easeInOut',
+      },
+    },
+    exit: {
+      opacity: 0,
+      transition: {
+        duration: 0.5,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
   return (
-    <div className={`${styles.aboutPageMainDiv} bg-secondary`}>
+    <motion.div
+      className={`${styles.aboutPageMainDiv} bg-secondary`}
+      variants={aboutVariants}
+      initial="hidden"
+      animate="visible"
+      exit="exit"
+    >
       <div
         className={`${styles.aboutContainer} d-flex flex-col align-items-center`}
       >
@@ -127,6 +154,6 @@ export default function About() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
