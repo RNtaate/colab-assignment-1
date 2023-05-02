@@ -6,8 +6,6 @@ import About from './Pages/About';
 import Extra from './Pages/Extra';
 import NavBar from './components/NavBar';
 
-import ScrollToTop from './components/ScrollToTop';
-
 function App() {
   const location = useLocation();
 
@@ -22,13 +20,11 @@ function App() {
           }
         }}
       >
-        {/* <ScrollToTop> */}
         <Routes location={location} key={location.key}>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/extra" element={<Extra />} />
         </Routes>
-        {/* </ScrollToTop> */}
       </AnimatePresence>
     </main>
   );
