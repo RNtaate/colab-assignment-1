@@ -135,15 +135,11 @@ export default function Home() {
               onClick={() => scrollHomeSection(singleKey)}
             >
               <span
-                className={`${styles.scrollBtnSpan}`}
-                style={{
-                  backgroundColor: scrollBtnStatus[`${singleKey}`]
-                    ? 'var(--main-pink)'
-                    : 'white',
-                  transform: `scale(${
-                    scrollBtnStatus[`${singleKey}`] ? 3 : 1
-                  })`,
-                }}
+                className={`${styles.scrollBtnSpan} ${
+                  scrollBtnStatus[`${singleKey}`]
+                    ? styles.scollBtnSpanActive
+                    : ''
+                }`}
               ></span>
             </button>
           );

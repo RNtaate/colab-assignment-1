@@ -27,6 +27,17 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   transition: 0.3s ease-in-out;
+  background-color: var(--text-color);
+}
+
+.scollBtnSpanActive {
+  transform: scale(3);
+  background-color: var(--main-pink);
+}
+
+.scrollBtn:hover > span,
+.scrollBtn:focus > span {
+  transform: scale(3);
 }
 
 @media screen and (min-width: 1300px) {
