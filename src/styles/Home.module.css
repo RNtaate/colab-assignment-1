@@ -9,6 +9,7 @@
 }
 
 .scrollBtnsDiv {
+  display: none;
   position: fixed;
   width: 50px;
   left: 100%;
@@ -37,6 +38,12 @@
 
 .scrollBtn:hover > span {
   transform: scale(3);
+}
+
+@media screen and (min-width: 800px) and (min-height: 550px) {
+  .scrollBtnsDiv {
+    display: flex;
+  }
 }
 
 @media screen and (min-width: 1300px) {
