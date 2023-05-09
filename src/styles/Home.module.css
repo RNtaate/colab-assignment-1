@@ -9,6 +9,7 @@
 }
 
 .scrollBtnsDiv {
+  display: none;
   position: fixed;
   width: 50px;
   left: 100%;
@@ -39,11 +40,16 @@
   transform: scale(3);
 }
 
+@media screen and (min-width: 800px) and (min-height: 550px) {
+  .scrollBtnsDiv {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 1300px) {
   .scrollBtnsDiv {
-    left:
-      calc(
-        var(--maximum-screen-width) + ((100% - var(--maximum-screen-width)) / 2)
-      );
+    left: calc(
+      var(--maximum-screen-width) + ((100% - var(--maximum-screen-width)) / 2)
+    );
   }
 }

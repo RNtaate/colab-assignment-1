@@ -125,7 +125,7 @@ export default function Home() {
       <Contact ref={contactRef} />
 
       <div
-        className={`${styles.scrollBtnsDiv} d-flex flex-col justify-content-center align-items-center`}
+        className={`${styles.scrollBtnsDiv} flex-col justify-content-center align-items-center`}
       >
         {Object.keys(buttonObj).map((singleKey) => (
           <button
