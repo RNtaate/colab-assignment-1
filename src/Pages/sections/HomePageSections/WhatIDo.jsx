@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import frontendImage from '../../../assets/frontend3.svg';
 import backendImage from '../../../assets/backend1.svg';
@@ -8,12 +8,13 @@ import whatIDoImage from '../../../assets/whatIDo.svg';
 import styles from '../../../styles/WhatIDo.module.css';
 import SkillsCarousel from '../../../components/SkillsCarousel';
 
-export default function WhatIDo() {
+const WhatIDo = (props, ref) => {
   const svgDimensions = 100;
 
   return (
     <section
       className={`${styles.whatIDoSection} bg-primary d-flex flex-col align-items-center`}
+      ref={ref}
     >
       <h2
         className={`${styles.whatIDoHeading} text-center`}
@@ -61,4 +62,6 @@ export default function WhatIDo() {
       <SkillsCarousel />
     </section>
   );
-}
+};
+
+export default forwardRef(WhatIDo);

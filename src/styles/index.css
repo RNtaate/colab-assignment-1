@@ -18,6 +18,7 @@
   --primary-black: rgb(0, 0, 0);
   --primary-font: 'Raleway', sans-serif;
   --maximum-container-width: 1150px;
+  --maximum-screen-width: 1300px;
 }
 
 .bg-primary {
@@ -104,7 +105,7 @@ section {
 }
 
 main {
-  max-width: 1300px;
+  max-width: var(--maximum-screen-width);
   margin: 0 auto;
   position: relative;
 }

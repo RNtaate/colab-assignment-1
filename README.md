@@ -6,7 +6,7 @@
 
 ## Project Description
 
-> A portfolio built with React JS and Vite
+> A portfolio built with React JS and [Vite](https://vitejs.dev/)
 
 ## 🔧 Built with
 
