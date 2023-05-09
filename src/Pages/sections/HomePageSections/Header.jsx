@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import styles from '../../../styles/Header.module.css';
 import profileImage from '../../../assets/profile_photo-min.jpg';
 import dots from '../../../assets/dots.svg';
 
-export default function Header() {
+const Header = (props, ref) => {
   return (
     <header
       className={`${styles.header} d-flex justify-content-center align-items-center`}
+      ref={ref}
     >
       <div
         className={`${styles.headerContentsWrapper} d-flex align-items-center justify-content-center`}
@@ -99,4 +100,6 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+
+export default forwardRef(Header);

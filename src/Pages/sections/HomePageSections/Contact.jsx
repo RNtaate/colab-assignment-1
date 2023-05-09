@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 
 import styles from '../../../styles/Contact.module.css';
 import headerStyles from '../../../styles/Header.module.css';
@@ -6,10 +6,11 @@ import ContactForm from '../../../components/ContactForm';
 import headShot from '../../../assets/cartoon_headshot.jpg';
 import dots from '../../../assets/dots.svg';
 
-export default function Contact() {
+const Contact = (props, ref) => {
   return (
     <section
       className={`${styles.contactSection} bg-primary d-flex justify-content-center align-items-center`}
+      ref={ref}
     >
       <div
         className={`${styles.contactWrapper} d-flex align-items-center justify-content-center`}
@@ -75,4 +76,6 @@ export default function Contact() {
       </div>
     </section>
   );
-}
+};
+
+export default forwardRef(Contact);
