@@ -56,7 +56,7 @@ export default function Home() {
       },
     ];
     refArray.forEach((el, index) => {
-      if (index == refArray.length - 1) {
+      if (index === refArray.length - 1) {
         handleContactIntersecting(el, 150);
       } else {
         handleIntersecting(el, 50);
@@ -72,8 +72,9 @@ export default function Home() {
   }, []);
 
   const scrollHomeSection = (refKey) => {
-    if (`${refKey}` == 'contactBtn') {
-      // since contact section is positioned sticky, we scroll the container div to the bottom in order to reveal the contact section.
+    if (`${refKey}` === 'contactBtn') {
+      /* since contact section is positioned sticky,
+      we scroll the container div to the bottom in order to reveal the contact section. */
 
       containerRef.current.scrollIntoView({ behavior: 'smooth', block: 'end' });
       return;
@@ -126,24 +127,20 @@ export default function Home() {
       <div
         className={`${styles.scrollBtnsDiv} d-flex flex-col justify-content-center align-items-center`}
       >
-        {Object.keys(buttonObj).map((singleKey) => {
-          return (
-            <button
-              className={`${styles.scrollBtn} d-flex justify-content-center align-items-center`}
-              type="button"
-              key={singleKey}
-              onClick={() => scrollHomeSection(singleKey)}
-            >
-              <span
-                className={`${styles.scrollBtnSpan} ${
-                  scrollBtnStatus[`${singleKey}`]
-                    ? styles.scollBtnSpanActive
-                    : ''
-                }`}
-              ></span>
-            </button>
-          );
-        })}
+        {Object.keys(buttonObj).map((singleKey) => (
+          <button
+            className={`${styles.scrollBtn} d-flex justify-content-center align-items-center`}
+            type="button"
+            key={singleKey}
+            onClick={() => scrollHomeSection(singleKey)}
+          >
+            <span
+              className={`${styles.scrollBtnSpan} ${
+                scrollBtnStatus[`${singleKey}`] ? styles.scollBtnSpanActive : ''
+              }`}
+            />
+          </button>
+        ))}
       </div>
     </motion.div>
   );

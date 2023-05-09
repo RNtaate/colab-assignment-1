@@ -35,8 +35,7 @@
   background-color: var(--main-pink);
 }
 
-.scrollBtn:hover > span,
-.scrollBtn:focus > span {
+.scrollBtn:hover > span {
   transform: scale(3);
 }
 
