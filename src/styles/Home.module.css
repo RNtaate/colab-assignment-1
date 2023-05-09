@@ -48,8 +48,9 @@
 
 @media screen and (min-width: 1300px) {
   .scrollBtnsDiv {
-    left: calc(
-      var(--maximum-screen-width) + ((100% - var(--maximum-screen-width)) / 2)
-    );
+    left:
+      calc(
+        var(--maximum-screen-width) + ((100% - var(--maximum-screen-width)) / 2)
+      );
   }
 }
