@@ -1,5 +1,38 @@
+.homeContainerDiv {
+  position: relative;
+}
+
 .forwardDiv {
   position: relative;
   z-index: 1;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);
+}
+
+.scrollBtnsDiv {
+  position: fixed;
+  width: 50px;
+  left: 100%;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  z-index: 2;
+  gap: 15px;
+}
+
+.scrollBtn {
+  padding: 6px;
+}
+
+.scrollBtnSpan {
+  min-width: 4px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1300px) {
+  .scrollBtnsDiv {
+    left: calc(
+      var(--maximum-screen-width) + ((100% - var(--maximum-screen-width)) / 2)
+    );
+  }
 }
