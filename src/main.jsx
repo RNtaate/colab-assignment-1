@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import 'react-activity/dist/library.css';
 import App from './App';
 import './styles/index.css';
 
@@ -13,5 +14,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
