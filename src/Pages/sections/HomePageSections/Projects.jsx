@@ -4,7 +4,14 @@ import ProjectCard from '../../../components/ProjectCard';
 import styles from '../../../styles/Projects.module.css';
 import projectsData from '../../../services/projects';
 
-const animationNamesArray = ['fade-left', 'fade-up', 'fade-right'];
+const animationNamesArray = [
+  'fade-left',
+  'flip-left',
+  'fade-right',
+  'fade-up',
+  'zoom-in',
+  'flip-up',
+];
 
 const Projects = (props, ref) => (
   <section className="bg-secondary text-center" ref={ref}>
