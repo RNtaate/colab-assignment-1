@@ -35,6 +35,15 @@
   margin-bottom: 10px;
 }
 
+.fetchIndicatorSpan {
+  gap: 20px;
+}
+
+.fetchIndicatorSpan > i {
+  font-weight: 300;
+  letter-spacing: 1.1px;
+}
+
 .errorParagraph {
   color: rgba(255, 0, 0, 1);
 }

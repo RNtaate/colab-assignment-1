@@ -3,6 +3,7 @@ import norpgramImage from '../assets/norpgram-min.png';
 import norpmoviesImage from '../assets/norp_movies-min.png';
 import soundImage from '../assets/sound-min.png';
 import bookingsImage from '../assets/booking-appointments.jpg';
+import CarouselImage from '../assets/Carousel_Colab_Crop.jpg';
 
 const projectsData = [
   {
@@ -31,6 +32,15 @@ const projectsData = [
     github: 'https://github.com/RNtaate/movies-catalogue',
     live: 'https://norp-movies.netlify.app',
     view: 'DESKTOP',
+  },
+  {
+    title: 'Animated Carousels',
+    desc: 'A collection of animated carousels built with the React-Native Animated API.',
+    image: CarouselImage,
+    tags: ['React Native', 'Expo'],
+    github: 'https://github.com/RNtaate/animated-carousel-React-Native-',
+    live: 'https://snack.expo.dev/@rntaate/animated-carousels',
+    view: 'MOBILE APP',
   },
   {
     title: 'Landing Page',
