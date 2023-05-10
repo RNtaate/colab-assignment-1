@@ -49,7 +49,9 @@ export default function Joke() {
           <span
             className={`${styles.fetchIndicatorSpan} d-flex align-items-center`}
           >
-            <i>Fetching a joke </i> <Dots size={15} />
+            <i>Fetching a joke </i>
+            {' '}
+            <Dots size={15} />
           </span>
         )}
         {error && <p className={styles.errorParagraph}>{error}</p>}
