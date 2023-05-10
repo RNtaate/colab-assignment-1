@@ -16,7 +16,7 @@
 
 ## 🔴 Live Demo
 
-- [@Netlify](https://royntaate.netlify.app)
+- [Roy Ntaate](https://royntaate.netlify.app)
 
 ## ✒️ Authors
 
