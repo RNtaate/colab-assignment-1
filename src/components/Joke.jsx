@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Dots from 'react-activity/dist/Dots';
 
 import styles from '../styles/Joke.module.css';
 import API_URL from '../services/HelperConstants';
@@ -44,7 +45,13 @@ export default function Joke() {
           </>
         )}
 
-        {isLoading && <p>Fetching a joke ...</p>}
+        {isLoading && (
+          <span
+            className={`${styles.fetchIndicatorSpan} d-flex align-items-center`}
+          >
+            <i>Fetching a joke </i> <Dots size={15} />
+          </span>
+        )}
         {error && <p className={styles.errorParagraph}>{error}</p>}
       </div>
     </div>
