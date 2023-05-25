@@ -9,6 +9,11 @@ import postgresqlImage from './postgresql.svg';
 import reduxImage from './redux.svg';
 import herokuImage from './heroku.svg';
 import firebaseImage from './firebase.svg';
+import reactNativeImage from './reactNative.svg';
+import gitImage from './git.svg';
+import githubImage from './github.svg';
+import nodejsImage from './nodejs.svg';
+import expressjsImage from './expressjs.svg';
 
 export {
   htmlImage,
@@ -22,4 +27,9 @@ export {
   reduxImage,
   herokuImage,
   firebaseImage,
+  reactNativeImage,
+  gitImage,
+  githubImage,
+  nodejsImage,
+  expressjsImage,
 };

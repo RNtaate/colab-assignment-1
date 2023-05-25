@@ -1,6 +1,7 @@
 :root {
   --side: 200px;
   --scroll-speed: 50s;
+  --total: 16;
 }
 
 .carouselWrapper {
@@ -21,7 +22,7 @@
 
 .carouselDiv2 {
   animation: carousel2 var(--scroll-speed) linear infinite;
-  left: calc(var(--side) * 11);
+  left: calc(var(--side) * var(--total));
 }
 
 @keyframes carousel1 {
@@ -30,7 +31,7 @@
   }
 
   to {
-    transform: translate(calc((-1 * var(--side) * 11)));
+    transform: translate(calc((-1 * var(--side) * var(--total))));
   }
 }
 
@@ -40,7 +41,7 @@
   }
 
   to {
-    transform: translate(calc((-1 * var(--side) * 11)));
+    transform: translate(calc((-1 * var(--side) * var(--total))));
   }
 }
 
