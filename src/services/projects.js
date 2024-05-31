@@ -4,6 +4,7 @@ import norpmoviesImage from '../assets/norp_movies-min.png';
 import soundImage from '../assets/sound-min.png';
 import bookingsImage from '../assets/booking-appointments.jpg';
 import CarouselImage from '../assets/Carousel_Colab_Crop.jpg';
+import moviesV2Image from '../assets/moviesV2.png';
 
 const projectsData = [
   {
@@ -25,11 +26,11 @@ const projectsData = [
     view: 'DESKTOP',
   },
   {
-    title: 'Movies Catalogue',
-    desc: 'A movies list display built by leveraging an API',
-    image: norpmoviesImage,
-    tags: ['React', 'Redux', 'The Movie DB'],
-    github: 'https://github.com/RNtaate/movies-catalogue',
+    title: 'Movies Catalogue V2',
+    desc: 'A movies list built to showcase React Query and Tailwind CSS',
+    image: moviesV2Image,
+    tags: ['React', 'React Query', 'Tailwind CSS'],
+    github: 'https://github.com/RNtaate/movies-catalogue-v2-with-react-query',
     live: 'https://norp-movies.netlify.app',
     view: 'DESKTOP',
   },
