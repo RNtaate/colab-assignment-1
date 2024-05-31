@@ -1,0 +1,31 @@
+.projectsPageMainDiv {
+  position: relative;
+}
+
+.scrollTopBtnDiv {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
+  aspect-ratio: 1 / 1;
+  font-size: 40px;
+  background-color: var(--main-pink);
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);
+  transition: all 0.2s ease-in-out;
+}
+
+.scrollTopBtnDiv:hover {
+  color: var(--main-pink);
+  border: 1px solid var(--main-pink);
+  background-color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .scrollTopBtnDiv {
+    display: flex;
+  }
+}

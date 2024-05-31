@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '../styles/Extra.module.css';
-import aboutStyles from '../styles/About.module.css';
 import Joke from '../components/Joke';
+import PageHeading from '../components/PageHeading';
 
 export default function Extra() {
   const extraPageVariants = {
@@ -37,13 +37,11 @@ export default function Extra() {
       <div
         className={`${styles.extraContainer} d-flex flex-col align-items-center justify-content-center`}
       >
-        <h1
-          className={`${aboutStyles.aboutHeading} text-center`}
-          data-aos="fade"
-          data-aos-duration="1000"
-        >
-          EXTRA
-        </h1>
+        <PageHeading
+          elementText="EXTRA"
+          aosStyle="fade"
+          aosDuration="1000"
+        />
 
         <h3
           className="text-center"

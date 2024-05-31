@@ -36,6 +36,7 @@ const Contact = (props, ref) => (
             href="https://github.com/RNtaate"
             target="_blank"
             rel="noreferrer"
+            aria-label="Github RNtaate"
           >
             <span>
               <i className="fa-brands fa-github" />
@@ -46,6 +47,7 @@ const Contact = (props, ref) => (
             href="https://linkedin.com/in/roy-ntaate"
             target="_blank"
             rel="noreferrer"
+            aria-label="Linked roy-ntaate"
           >
             <span>
               <i className="fa-brands fa-linkedin" />
@@ -55,9 +57,10 @@ const Contact = (props, ref) => (
             href="https://twitter.com/RNtaate"
             target="_blank"
             rel="noreferrer"
+            aria-label="Twitter RNtaate"
           >
             <span>
-              <i className="fa-brands fa-twitter" />
+              <i className="fa-brands fa-x-twitter" />
             </span>
           </a>
 
@@ -65,6 +68,7 @@ const Contact = (props, ref) => (
             href="mailto:royhyde14@gmail.com"
             target="_blank"
             rel="noreferrer"
+            aria-label="mailto icon"
           >
             <span>
               <i className="fa-solid fa-envelope" />

@@ -7,6 +7,15 @@
   margin: 0 auto;
 }
 
+.moreButtonDiv {
+  margin-top: 30px;
+}
+
+.moreButton {
+  min-width: 320px;
+  max-width: 400px;
+}
+
 @media screen and (min-width: 769px) {
   .projectsContainer {
     grid-template-columns: repeat(2, 1fr);

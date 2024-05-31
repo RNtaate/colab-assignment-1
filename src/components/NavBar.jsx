@@ -22,6 +22,11 @@ export default function NavBar() {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/projects" className="navbarLink">
+            <span>Projects</span>
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/about" className="navbarLink">
             <span>About</span>
           </NavLink>

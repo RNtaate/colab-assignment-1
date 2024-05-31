@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles/About.module.css';
 import profileImage from '../assets/profile_photo-min.jpg';
 import formStyles from '../styles/ContactForm.module.css';
+import PageHeading from '../components/PageHeading';
 
 export default function About() {
   const aboutVariants = {
@@ -37,13 +38,11 @@ export default function About() {
       <div
         className={`${styles.aboutContainer} d-flex flex-col align-items-center`}
       >
-        <h1
-          className={`${styles.aboutHeading} text-center`}
-          data-aos="fade-left"
-          data-aos-duration="1000"
-        >
-          ABOUT
-        </h1>
+        <PageHeading
+          elementText="ABOUT"
+          aosStyle="fade-left"
+          aosDuration="1000"
+        />
         <div
           className={`${styles.aboutDetailsWrapper} d-flex justify-content-center`}
         >
@@ -59,6 +58,7 @@ export default function About() {
                 href="https://github.com/RNtaate"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Github RNtaate"
               >
                 <span>
                   <i className="fa-brands fa-github" />
@@ -69,6 +69,7 @@ export default function About() {
                 href="https://linkedin.com/in/roy-ntaate"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Linked roy-ntaate"
               >
                 <span>
                   <i className="fa-brands fa-linkedin" />
@@ -78,9 +79,10 @@ export default function About() {
                 href="https://twitter.com/RNtaate"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Twitter RNtaate"
               >
                 <span>
-                  <i className="fa-brands fa-twitter" />
+                  <i className="fa-brands fa-x-twitter" />
                 </span>
               </a>
 
@@ -88,6 +90,7 @@ export default function About() {
                 href="mailto:royhyde14@gmail.com"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="mailto icon"
               >
                 <span>
                   <i className="fa-solid fa-envelope" />
@@ -140,7 +143,7 @@ export default function About() {
               development opportunities.&ldquo;
             </p>
             <a
-              href="https://docs.google.com/file/d/1uE8I6PEqIwVEUDtsBsCYLxVtbgE81qohwuPFfhvhMEk/view"
+              href="https://drive.google.com/file/d/1lZAdlZKbmhifM9xciS6hptftOOJUbRYb/view"
               target="_blank"
               rel="noreferrer"
             >

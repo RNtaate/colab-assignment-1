@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Home from './Pages/Home';
 import About from './Pages/About';
 import Extra from './Pages/Extra';
+import ProjectsPage from './Pages/ProjectsPage';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/extra" element={<Extra />} />
+          <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </AnimatePresence>
     </main>
