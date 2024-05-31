@@ -89,6 +89,7 @@ const ProjectsPage = () => {
           onClick={scrollToTop}
           data-aos="fade-up"
           data-aos-duration="500"
+          aria-label="Scroll Top"
         >
           <i className="fa-solid fa-angle-up" />
         </button>

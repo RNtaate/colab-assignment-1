@@ -133,6 +133,7 @@ export default function Home() {
             type="button"
             key={singleKey}
             onClick={() => scrollHomeSection(singleKey)}
+            aria-label={`Button ${singleKey}`}
           >
             <span
               className={`${styles.scrollBtnSpan} ${
