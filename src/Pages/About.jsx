@@ -58,6 +58,7 @@ export default function About() {
                 href="https://github.com/RNtaate"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Github RNtaate"
               >
                 <span>
                   <i className="fa-brands fa-github" />
@@ -68,6 +69,7 @@ export default function About() {
                 href="https://linkedin.com/in/roy-ntaate"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Linked roy-ntaate"
               >
                 <span>
                   <i className="fa-brands fa-linkedin" />
@@ -77,6 +79,7 @@ export default function About() {
                 href="https://twitter.com/RNtaate"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Twitter RNtaate"
               >
                 <span>
                   <i className="fa-brands fa-twitter" />
@@ -87,6 +90,7 @@ export default function About() {
                 href="mailto:royhyde14@gmail.com"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="mailto icon"
               >
                 <span>
                   <i className="fa-solid fa-envelope" />
