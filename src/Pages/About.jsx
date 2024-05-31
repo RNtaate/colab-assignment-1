@@ -140,7 +140,7 @@ export default function About() {
               development opportunities.&ldquo;
             </p>
             <a
-              href="https://docs.google.com/file/d/1uE8I6PEqIwVEUDtsBsCYLxVtbgE81qohwuPFfhvhMEk/view"
+              href="https://drive.google.com/file/d/1lZAdlZKbmhifM9xciS6hptftOOJUbRYb/view"
               target="_blank"
               rel="noreferrer"
             >
