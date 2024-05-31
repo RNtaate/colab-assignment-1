@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '../styles/Extra.module.css';
-import aboutStyles from '../styles/About.module.css';
 import Joke from '../components/Joke';
 import PageHeading from '../components/PageHeading';
 
