@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 
+import styles from '../styles/ProjectsPage.module.css';
 import aboutStyles from '../styles/About.module.css';
 import projectsHomeStyles from '../styles/Projects.module.css';
 import PageHeading from '../components/PageHeading';
@@ -29,9 +30,32 @@ const ProjectsPage = () => {
     },
   };
 
+  const [showScrollButton, setShowScrollButton] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+    window;
+  };
+
+  const getScrollPosition = () => {
+    if (window.scrollY > 100) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', getScrollPosition);
+
+    return () => {
+      window.removeEventListener('scroll', getScrollPosition);
+    };
+  }, []);
+
   return (
     <motion.div
-      className={`${aboutStyles.aboutPageMainDiv}`}
+      className={`${aboutStyles.aboutPageMainDiv} ${styles.projectsPageMainDiv}`}
       variants={projectsPageVaraints}
       initial="hidden"
       animate="visible"
@@ -58,6 +82,17 @@ const ProjectsPage = () => {
           </div>
         </section>
       </div>
+
+      {showScrollButton && (
+        <div
+          className={`${styles.scrollTopBtnDiv} justify-content-center align-items-center`}
+          onClick={scrollToTop}
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <i className="fa-solid fa-angle-up"></i>
+        </div>
+      )}
     </motion.div>
   );
 };
