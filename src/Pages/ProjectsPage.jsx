@@ -6,7 +6,7 @@ import aboutStyles from '../styles/About.module.css';
 import projectsHomeStyles from '../styles/Projects.module.css';
 import PageHeading from '../components/PageHeading';
 import ProjectCard from '../components/ProjectCard';
-import projectsData from '../services/projects';
+import projectsData from '../services/moreProjects';
 import { ANIMATION_NAMES_ARRAY } from '../services/HelperConstants';
 
 const ProjectsPage = () => {
