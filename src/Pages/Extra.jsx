@@ -38,9 +38,9 @@ export default function Extra() {
         className={`${styles.extraContainer} d-flex flex-col align-items-center justify-content-center`}
       >
         <PageHeading
-          elementText={'EXTRA'}
-          aosStyle={'fade'}
-          aosDuration={'1000'}
+          elementText="EXTRA"
+          aosStyle="fade"
+          aosDuration="1000"
         />
 
         <h3

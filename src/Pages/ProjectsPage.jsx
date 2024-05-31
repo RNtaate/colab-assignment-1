@@ -34,7 +34,6 @@ const ProjectsPage = () => {
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
-    window;
   };
 
   const getScrollPosition = () => {
@@ -63,9 +62,9 @@ const ProjectsPage = () => {
     >
       <div className="d-flex flex-col align-items-center">
         <PageHeading
-          elementText={'PROJECTS'}
-          aosStyle={'fade-right'}
-          aosDuration={'1000'}
+          elementText="PROJECTS"
+          aosStyle="fade-right"
+          aosDuration="1000"
         />
 
         <section>
@@ -84,14 +83,15 @@ const ProjectsPage = () => {
       </div>
 
       {showScrollButton && (
-        <div
+        <button
+          type="button"
           className={`${styles.scrollTopBtnDiv} justify-content-center align-items-center`}
           onClick={scrollToTop}
           data-aos="fade-up"
           data-aos-duration="500"
         >
-          <i className="fa-solid fa-angle-up"></i>
-        </div>
+          <i className="fa-solid fa-angle-up" />
+        </button>
       )}
     </motion.div>
   );

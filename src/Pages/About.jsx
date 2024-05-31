@@ -39,9 +39,9 @@ export default function About() {
         className={`${styles.aboutContainer} d-flex flex-col align-items-center`}
       >
         <PageHeading
-          elementText={'ABOUT'}
-          aosStyle={'fade-left'}
-          aosDuration={'1000'}
+          elementText="ABOUT"
+          aosStyle="fade-left"
+          aosDuration="1000"
         />
         <div
           className={`${styles.aboutDetailsWrapper} d-flex justify-content-center`}
