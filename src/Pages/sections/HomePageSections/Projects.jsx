@@ -5,15 +5,7 @@ import ProjectCard from '../../../components/ProjectCard';
 import styles from '../../../styles/Projects.module.css';
 import projectsData from '../../../services/projects';
 import formStyles from '../../../styles/ContactForm.module.css';
-
-const animationNamesArray = [
-  'fade-left',
-  'flip-left',
-  'fade-right',
-  'fade-up',
-  'zoom-in',
-  'flip-up',
-];
+import { ANIMATION_NAMES_ARRAY } from '../../../services/HelperConstants';
 
 const Projects = (props, ref) => (
   <section className="bg-secondary text-center" ref={ref}>
@@ -24,7 +16,7 @@ const Projects = (props, ref) => (
           <ProjectCard
             key={project.title}
             project={project}
-            name={animationNamesArray[index % animationNamesArray.length]}
+            name={ANIMATION_NAMES_ARRAY[index % ANIMATION_NAMES_ARRAY.length]}
           />
         ))}
       </div>
