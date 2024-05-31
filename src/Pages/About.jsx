@@ -82,7 +82,7 @@ export default function About() {
                 aria-label="Twitter RNtaate"
               >
                 <span>
-                  <i className="fa-brands fa-twitter" />
+                  <i className="fa-brands fa-x-twitter" />
                 </span>
               </a>
 
