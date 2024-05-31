@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles/About.module.css';
 import profileImage from '../assets/profile_photo-min.jpg';
 import formStyles from '../styles/ContactForm.module.css';
+import PageHeading from '../components/PageHeading';
 
 export default function About() {
   const aboutVariants = {
@@ -37,13 +38,11 @@ export default function About() {
       <div
         className={`${styles.aboutContainer} d-flex flex-col align-items-center`}
       >
-        <h1
-          className={`${styles.aboutHeading} text-center`}
-          data-aos="fade-left"
-          data-aos-duration="1000"
-        >
-          ABOUT
-        </h1>
+        <PageHeading
+          elementText={'ABOUT'}
+          aosStyle={'fade-left'}
+          aosDuration={'1000'}
+        />
         <div
           className={`${styles.aboutDetailsWrapper} d-flex justify-content-center`}
         >

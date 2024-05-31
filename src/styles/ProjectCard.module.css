@@ -6,6 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
 }
 
 .cardDetails {
