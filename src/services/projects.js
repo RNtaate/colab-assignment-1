@@ -1,9 +1,9 @@
 import runnerImage from '../assets/endless-runner.png';
 import norpgramImage from '../assets/norpgram-min.png';
-import soundImage from '../assets/sound-min.png';
 import bookingsImage from '../assets/booking-appointments.jpg';
 import CarouselImage from '../assets/Carousel_Colab_Crop.jpg';
 import moviesV2Image from '../assets/moviesV2.png';
+import chatApp from '../assets/norp_chat_app.png';
 
 const projectsData = [
   {
@@ -43,21 +43,20 @@ const projectsData = [
     view: 'MOBILE APP',
   },
   {
-    title: 'Landing Page',
-    desc: 'A fictional webpage of an online Sounds Electronics Store.',
-    image: soundImage,
-    tags: ['HTML', 'CSS', 'Bootstrap'],
-    github: 'https://github.com/RNtaate/Sound-Electronics-store',
-    live: 'https://rawcdn.githack.com/RNtaate/Sound-Electronics-store/ccadeae6e3e1eda77681a48f5f835e974dddcbd5/index.html',
-    view: 'RESPONSIVE',
-  },
-  {
     title: 'Booking Appointments',
     desc: 'A full stack project for booking appointments at a fictional massage parlor.',
     image: bookingsImage,
     tags: ['React', 'Ruby on Rails'],
     github: 'https://github.com/RNtaate/bookings-frontend',
     view: 'DESKTOP',
+  },
+  {
+    title: 'Norp Chat App',
+    desc: 'A real-time chat application built to exercise websockets knowledge.',
+    image: chatApp,
+    tags: ['React', 'SocketIO', 'React Bootstrap'],
+    github: 'https://github.com/RNtaate/norp-chat-app',
+    view: 'MOBILE VIEW',
   },
 ];
 

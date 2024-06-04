@@ -6,6 +6,7 @@ import bookingsImage from '../assets/booking-appointments.jpg';
 import CarouselImage from '../assets/Carousel_Colab_Crop.jpg';
 import moviesV2Image from '../assets/moviesV2.png';
 import ticImage from '../assets/tic-icon.svg';
+import chatApp from '../assets/norp_chat_app.png';
 
 const projectsData = [
   {
@@ -51,6 +52,14 @@ const projectsData = [
     github: 'https://github.com/RNtaate/animated-carousel-React-Native-',
     live: 'https://snack.expo.dev/@rntaate/animated-carousels',
     view: 'MOBILE APP',
+  },
+  {
+    title: 'Norp Chat App',
+    desc: 'A real-time chat application built to exercise websockets knowledge.',
+    image: chatApp,
+    tags: ['React', 'SocketIO', 'React Bootstrap'],
+    github: 'https://github.com/RNtaate/norp-chat-app',
+    view: 'MOBILE VIEW',
   },
   {
     title: 'Tic Tac Toe',
