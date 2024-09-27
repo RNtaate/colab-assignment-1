@@ -7,6 +7,7 @@ import CarouselImage from '../assets/Carousel_Colab_Crop.jpg';
 import moviesV2Image from '../assets/moviesV2.png';
 import ticImage from '../assets/tic-icon.svg';
 import chatApp from '../assets/norp_chat_app.png';
+import shooting from '../assets/shooting-game.png';
 
 const projectsData = [
   {
@@ -69,6 +70,15 @@ const projectsData = [
     github: 'https://github.com/RNtaate/Tic-Tac-Toe-React',
     live: 'https://norp-tictactoe.netlify.app',
     view: 'DESKTOP',
+  },
+  {
+    title: 'Shooter mini game',
+    desc: 'A mini shooting game project part of a series of canvas projects.',
+    image: shooting,
+    tags: ['VanillaJS', 'Webpack', 'HTML5Canvas'],
+    github: 'https://github.com/RNtaate/Canvas-Projects',
+    live: 'https://shooting-mini-game.netlify.app',
+    view: 'DESKTOP, MOBILE(Non-Responsive)',
   },
   {
     title: 'Movies Catalogue',
