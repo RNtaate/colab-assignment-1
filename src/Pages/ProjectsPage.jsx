@@ -30,7 +30,9 @@ const ProjectsPage = () => {
     },
   };
 
-  const [showScrollButton, setShowScrollButton] = useState(false);
+  const [showScrollButton, setShowScrollButton] = useState(
+    window.scrollY > 100
+  );
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
