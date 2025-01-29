@@ -1,7 +1,8 @@
 .navBar {
   position: fixed;
   width: 100%;
-  background-color: rgba(204, 204, 204, 0.9);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   bottom: 0;
   left: 0;
   right: 0;
@@ -33,7 +34,7 @@
 }
 
 .navBarList > li > a {
-  color: black;
+  color: white;
 }
 
 .navBarList > li > a > span {
