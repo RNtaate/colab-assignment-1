@@ -31,7 +31,7 @@ const ProjectsPage = () => {
   };
 
   const [showScrollButton, setShowScrollButton] = useState(
-    window.scrollY > 100
+    window.scrollY > 100,
   );
 
   const scrollToTop = () => {
