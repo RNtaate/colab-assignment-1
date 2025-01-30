@@ -12,7 +12,7 @@
   font-size: 40px;
   background-color: var(--main-pink);
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   cursor: pointer;
   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 1);
   transition: all 0.2s ease-in-out;
@@ -20,8 +20,14 @@
 
 .scrollTopBtnDiv:hover {
   color: var(--main-pink);
-  border: 1px solid var(--main-pink);
-  background-color: white;
+  border: 3px solid var(--main-pink);
+  background-color: var(--text-color);
+}
+
+.scrollTopBtnDiv:active {
+  color: var(--text-color);
+  border: 3px solid transparent;
+  background-color: var(--main-pink);
 }
 
 @media screen and (min-width: 800px) {
