@@ -6,6 +6,7 @@ import About from './Pages/About';
 import Extra from './Pages/Extra';
 import ProjectsPage from './Pages/ProjectsPage';
 import NavBar from './components/NavBar';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const location = useLocation();
@@ -13,21 +14,23 @@ function App() {
   return (
     <main>
       <NavBar />
-      <AnimatePresence
-        mode="wait"
-        onExitComplete={() => {
-          if (typeof window !== 'undefined') {
-            window.scrollTo({ top: 0 });
-          }
-        }}
-      >
-        <Routes location={location} key={location.key}>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/extra" element={<Extra />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-        </Routes>
-      </AnimatePresence>
+      <ScrollToTop>
+        <AnimatePresence
+          mode="wait"
+          onExitComplete={() => {
+            if (typeof window !== 'undefined') {
+              window.scrollTo({ top: 0 });
+            }
+          }}
+        >
+          <Routes location={location} key={location.key}>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/extra" element={<Extra />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+          </Routes>
+        </AnimatePresence>
+      </ScrollToTop>
     </main>
   );
 }

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 import styles from '../styles/About.module.css';
+import projectPageStyles from '../styles/ProjectsPage.module.css';
 import profileImage from '../assets/profile_photo-min.jpg';
 import formStyles from '../styles/ContactForm.module.css';
 import PageHeading from '../components/PageHeading';
@@ -26,6 +27,30 @@ export default function About() {
       },
     },
   };
+
+  const [showScrollButton, setShowScrollButton] = useState(
+    window.scrollY > 100,
+  );
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const getScrollPosition = () => {
+    if (window.scrollY > 100) {
+      setShowScrollButton(true);
+    } else {
+      setShowScrollButton(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', getScrollPosition);
+
+    return () => {
+      window.removeEventListener('scroll', getScrollPosition);
+    };
+  }, []);
 
   return (
     <motion.div
@@ -157,6 +182,19 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      {showScrollButton && (
+        <button
+          type="button"
+          className={`${projectPageStyles.scrollTopBtnDiv} justify-content-center align-items-center`}
+          onClick={scrollToTop}
+          data-aos="fade-up"
+          data-aos-duration="500"
+          aria-label="Scroll Top"
+        >
+          <i className="fa-solid fa-angle-up" />
+        </button>
+      )}
     </motion.div>
   );
 }
